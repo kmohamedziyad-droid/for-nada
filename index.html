@@ -1,22 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>For Nada ❤️</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Nada ❤️</title>
 
-<div class="container">
-  <h1>For My Beautiful Nada ❤️</h1>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
-  <img src="PUT_MAIN_PICTURE_HERE" class="main-pic">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-  <div class="buttons">
-    <a href="gift1.html"><button>💌 Open My Letter</button></a>
-    <a href="gift2.html"><button>✨ Our Future</button></a>
-    <a href="gift3.html"><button>🌸 Flower Surprise</button></a>
-  </div>
-</div>
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);
+    color:white;
+    overflow-x:hidden;
+    text-align:center;
+}
 
-</body>
-</html>
+/* Floating Flowers */
+.flower{
+    position:fixed;
+    top:-50px;
+    font-size:24px;
+    animation: fall linear infinite;
+    opacity:0.8;
+}
+
+@keyframes fall{
+    0%{ transform: translateY(0) rotate(0deg); }
+    100%{ transform: translateY(110vh) rotate(360deg); }
+}
+
+/* Main Container */
+.container{
+    padding:80px 20px;
+}
+
+/* Title */
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size:48px;
+    margin-bottom:20px;
+    animation: fadeIn 2s ease forwards;
+}
+
+p{
+    font-size:18px;
+    max-width:600px;
+    margin:0 auto 40px;
+    opacity:0;
+    animation: fadeIn 3s ease forwards;
+    animation-delay:1s;
+}
+
+/* Image */
+img{
+    width:280px;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0
